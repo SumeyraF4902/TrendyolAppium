@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class ElementHelper {
 
@@ -23,6 +25,9 @@ public class ElementHelper {
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+    public List<WebElement> findElements(By locator) {
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+    }
 
     public void checkElement(By locator) {
         findElement(locator);
@@ -36,9 +41,22 @@ public class ElementHelper {
         return findElement(locator).getText();
     }
 
-
-    public void sendKeys(By locator,String text) {
+    public void sendKeys(By locator, String text) {
         findElement(locator).sendKeys(text);
+    }
+
+
+    public void clickElementWithText(By locator, String text) {
+        boolean check = false;
+        List<WebElement> elementList = findElements(locator);
+        for (WebElement elem : elementList) {
+            if (elem.getText().equals(text)) {
+                check = true;
+                elem.click();
+                break;
+            }
+        }
+        Assert.assertTrue(check, "Listede istediğin textteki elamanı bulamadım!!!");
     }
 
 

@@ -4,26 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720ca530-b565-471a-9097-6c82a0820cd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="720ca530-b565-471a-9097-6c82a0820cd2" name="Changes" comment="ornek1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ActionBarUsagePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ActionBarUsageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ResultSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,6 +126,18 @@
       <option name="presentableId" value="Default" />
       <updated>1681046511958</updated>
     </task>
+    <task id="LOCAL-00001" summary="ornek1">
+      <created>1681758298208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681758298208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ornek1" />
+    <option name="LAST_COMMIT_MESSAGE" value="ornek1" />
   </component>
 </project>
