@@ -30,7 +30,6 @@ public class DriverManager {
 
     public static WebDriver createDriver(String browser, String url, int implictyWait) {
         WebDriver driver;
-        DesiredCapabilities capabilities = new DesiredCapabilities();
         switch (browser) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
@@ -41,18 +40,11 @@ public class DriverManager {
                 driver = new FirefoxDriver();
                 break;
             case "android":
+                DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("appPackage", "io.appium.android.apis");
                 capabilities.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
-
-                try {
-                    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-                } catch (MalformedURLException e) {
-                    throw new RuntimeException(e);
-                }
-                break;
-            case "ios":
-                capabilities.setCapability("platformName", "iOS");
+                capabilities.setCapability("noReset", false);
                 try {
                     driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
                 } catch (MalformedURLException e) {
@@ -63,7 +55,7 @@ public class DriverManager {
                 throw new RuntimeException("Invalid browser type provided!");
         }
         driverThread.set(driver);
-        if (!browser.equals("android") && !browser.equals("ios")) {
+        if (!browser.equals("android")) {
             driver.get(url);
             driver.manage().window().maximize();
         }

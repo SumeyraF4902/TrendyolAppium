@@ -1,15 +1,12 @@
 package utils;
 
-import io.appium.java_client.TouchAction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
 
 public class ElementHelper {
 
@@ -22,36 +19,26 @@ public class ElementHelper {
     }
 
 
+    public WebElement findElement(By locator) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+
     public void checkElement(By locator) {
-        driver.findElement(locator);
+        findElement(locator);
     }
 
-    public void clickElement(By locator) {
-        WebElement element = driver.findElement(locator);
-        element.click();
+    public void click(By locator) {
+        findElement(locator).click();
     }
 
-    public void clickListElement(By locator, String text) {
-        boolean check = false;
-        List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
-        for (WebElement element : elements) {
-            if (element.getAttribute("value").contains(text)) {
-                element.click();
-                check = true;
-                break;
-            }
-        }
-        Assert.assertTrue(check);
-    }
-
-    public void sendKeys(By locator, String text) {
-        WebElement element = driver.findElement(locator);
-        element.sendKeys(text);
+    public String getText(By locator) {
+        return findElement(locator).getText();
     }
 
 
-    public void scroll(By locator, String text) {
-
+    public void sendKeys(By locator,String text) {
+        findElement(locator).sendKeys(text);
     }
 
 

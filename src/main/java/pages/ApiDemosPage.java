@@ -4,19 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.ElementHelper;
 
-public class ResultPage {
+public class ApiDemosPage {
 
     ElementHelper elementHelper;
 
-    By resultsList = By.id("tvcap");
+    By googleIcon = By.id("android:id/action_bar");
 
-
-    public ResultPage(WebDriver driver) {
+    public ApiDemosPage(WebDriver driver) {
         this.elementHelper = new ElementHelper(driver);
     }
 
-    public void checkResults() {
-        elementHelper.checkElement(resultsList);
+
+    public void checkApiDemosPageOpen() {
+        elementHelper.checkElement(googleIcon);
     }
+
 
 }
