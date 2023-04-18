@@ -27,3 +27,17 @@ Feature: Google Search Page
     Examples:
       | tab1 | tab2       | tab3             | text    |
       | App  | Action Bar | Action Bar Usage | enes    |
+      | App  | Action Bar | Action Bar Usage | enes    |
+      | App  | Action Bar | Action Bar Usage | enes    |
+
+  @Ornek5
+  Scenario: Scroll UiSelector/UiScrollable
+    Given uygulamanın açıldığı kontrol edilir
+    When tablarden "Graphics" tabine tıklanır
+    When tablarden Touch Paint tabine tıklanır
+
+  @Ornek6
+  Scenario: Scroll JavascriptExecutor
+    Given uygulamanın açıldığı kontrol edilir
+    When tablarden "Graphics" tabine tıklanır
+    When tablarden Touch Paint tabine tıklanırrrrr

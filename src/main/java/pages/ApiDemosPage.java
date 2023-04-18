@@ -1,5 +1,7 @@
 package pages;
 
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileCommand;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utils.ElementHelper;
@@ -14,6 +16,8 @@ public class ApiDemosPage {
     By tab_actionBar = By.xpath("//android.widget.TextView[@content-desc=\"Action Bar\"]");
     By tab_actionBarUsage = By.xpath("//android.widget.TextView[@content-desc=\"Action Bar Usage\"]");
     By tabs_list = By.id("android:id/text1");
+    By tab_touchPaint = MobileBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().description(\"Touch Paint\"))");
+    By tab_touchPaint2 = By.xpath("//android.widget.TextView[@content-desc=\"Touch Paint\"]");
 
 
     public ApiDemosPage(WebDriver driver) {
@@ -41,12 +45,15 @@ public class ApiDemosPage {
     }
 
     public void clickTab(String text) {
-        elementHelper.clickElementWithText(tabs_list,text);
+        elementHelper.clickElementWithText(tabs_list, text);
     }
 
+    public void clickTouchPaintTab() {
+        elementHelper.click(tab_touchPaint);
+    }
 
-
-
-
-
+    public void clickTouchPaintTab2() {
+        elementHelper.scroll();
+        elementHelper.click(tab_touchPaint2);
+    }
 }

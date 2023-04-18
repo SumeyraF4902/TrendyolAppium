@@ -8,6 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/search.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681765312259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="18:04:2023">
+      <created>1681843654790</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681843654790</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
