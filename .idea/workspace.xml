@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="720ca530-b565-471a-9097-6c82a0820cd2" name="Changes" comment="18:04:2023">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CategoriesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PopupPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/CategoriesPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/PopupSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ResultsPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/home.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ElementHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/Html/ExtentHtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/Pdf/ExtentPdf.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ActionBarUsagePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ApiDemosPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ActionBarUsageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ApiDemosSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/search.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +73,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+      <recent name="stepdefinitions" />
       <recent name="utils" />
     </key>
   </component>
