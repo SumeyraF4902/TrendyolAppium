@@ -16,11 +16,14 @@ Feature: Google Search Page
     When tablarden App tabine tıklanır
 
   @Ornek4
-  Scenario: SendKeys
+  Scenario Outline: SendKeys
     Given uygulamanın başlığının "API Demos" olduğu kontol edilir
-    When tablarden "App" tabine tıklanır
-    When tablarden "Action Bar" tabine tıklanır
-    When tablarden "Action Bar Usage" tabine tıklanır
+    When tablarden "<tab1>" tabine tıklanır
+    When tablarden "<tab2>" tabine tıklanır
+    When tablarden "<tab3>" tabine tıklanır
     When Search butonuna tıklanır
-    When Search alanına "enes" yazılır
-    Then Text area "enes" değerini içeriyormu kontrol edilir
+    When Search alanına "<text>" yazılır
+    Then Text area "<text>" değerini içeriyormu kontrol edilir
+    Examples:
+      | tab1 | tab2       | tab3             | text    |
+      | App  | Action Bar | Action Bar Usage | enes    |
