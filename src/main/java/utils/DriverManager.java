@@ -1,5 +1,6 @@
 package utils;
 
+import io.appium.java_client.AppiumDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,8 +46,9 @@ public class DriverManager {
                 capabilities.setCapability("appPackage", "com.sahibinden");
                 capabilities.setCapability("appActivity", "com.sahibinden.ui.supplementary.UrlForwardingActivity");
                 capabilities.setCapability("noReset", false);
+                capabilities.setCapability("autoGrantPermissions", true);
                 try {
-                    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                    driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
