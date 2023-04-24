@@ -12,4 +12,8 @@ public class CategoriesPageSteps {
         categoriesPage.clickTab(tab);
     }
 
+    @When("taps Close Button on Categories Page")
+    public void tapsCloseButtonOnCategoriesPage() {
+        categoriesPage.clickCloseButton();
+    }
 }
