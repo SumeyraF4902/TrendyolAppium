@@ -1,5 +1,6 @@
 package utils;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.PointerInput;
@@ -76,6 +77,29 @@ public class ElementHelper {
         Assert.assertTrue(check, "Listede istediğin textteki elamanı bulamadım!!!");
     }
 
+
+    public void checkElementWithText(By locator, String text) {
+        int i = 0;
+        boolean check = false;
+        findElement(locator);
+        while (i < 4) {
+            List<WebElement> elementList = findElements(locator);
+            for (WebElement elem : elementList) {
+                if (elem.getText().equals(text)) {
+                    check = true;
+                    break;
+                }
+            }
+            if (check) {
+                break;
+            } else {
+                scrollDown();
+                i++;
+            }
+        }
+        Assert.assertTrue(check, "Listede istediğin textteki elamanı bulamadım!!!");
+    }
+
     public List<WebElement> scroll(By by) {
         int i = 0;
         String previusPageSource = ".";
@@ -110,6 +134,38 @@ public class ElementHelper {
         scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
         ((RemoteWebDriver) driver).perform(List.of(scroll));
     }
+    public void pressEnter() {  //ENTER TIKLAMA
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("mobile:performEditorAction", ImmutableMap.of("action", "done"));
+    }
+    public void scrollDownWithElement(By locator) {
+        int startX = driver.findElement(locator).getSize().getWidth() / 2;
+        int startY = driver.findElement(locator).getSize().getHeight() / 2;
+        int endx = driver.findElement(locator).getSize().getWidth() / 2;
+        int endY = (int) (driver.findElement(locator).getSize().getHeight() * 0.2);
 
 
+        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+        Sequence scroll = new Sequence(finger, 0);
+        scroll.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, startY));
+        scroll.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        scroll.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), endx, endY));
+        scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        ((RemoteWebDriver) driver).perform(List.of(scroll));
+    }
+    public void scrollUpWithElement(By locator) {
+        int startX = driver.findElement(locator).getSize().getWidth() / 2;
+        int startY = driver.findElement(locator).getSize().getHeight() / 2;
+        int endx = driver.findElement(locator).getSize().getWidth() / 2;
+        int endY = (int) (driver.findElement(locator).getSize().getHeight() * 0.2);
+
+
+        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+        Sequence scroll = new Sequence(finger, 0);
+        scroll.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, startY));
+        scroll.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        scroll.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), endx, endY));
+        scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        ((RemoteWebDriver) driver).perform(List.of(scroll));
+    }
 }
